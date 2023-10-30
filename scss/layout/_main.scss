@@ -1,0 +1,35 @@
+main {
+    background-color: $brand-light-color;
+    height: 100vh;
+    // Navbar
+    .navbar {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .title {
+            font-family: 'Abhaya Libre', serif;
+            font-weight: 700;
+            font-size: 40px;
+        }
+        .socials {
+            display: none;
+        }
+        .nav {
+            display: none;
+        }
+        .icons {
+            .fa-cart-shopping, .fa-magnifying-glass {
+                display: none;
+            }
+            .hamburger-menu {
+                i {
+                    font-size: 28px;
+                    display: flex;
+                    justify-content: end;
+                }
+            }
+        }
+    }   
+}

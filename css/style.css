@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* font-family: 'Abhaya Libre', serif;
+font-family: 'Montserrat', sans-serif; */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background-color: #BC7526;
+  height: 30px;
+  display: grid;
+}
+header p {
+  color: white;
+  margin: auto;
+  font-size: 12px;
+}
+
+main {
+  background-color: #F2E7DA;
+  height: 100vh;
+}
+main .navbar {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .navbar .title {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+main .navbar .socials {
+  display: none;
+}
+main .navbar .nav {
+  display: none;
+}
+main .navbar .icons {
+  font-size: 28px;
+  display: flex;
+  justify-content: end;
+}
+main .navbar .icons .fa-cart-shopping, main .navbar .icons .fa-magnifying-glass {
+  display: none;
+}
+
+footer {
+  background-color: #4D4D4D;
+  padding: 20px;
+  display: grid;
+}
+
+.footer-links ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 15px;
+  row-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-links ul li {
+  list-style: none;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .socials-footer {
+  margin: auto;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+footer .tarjetas {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  padding-bottom: 15px;
+}
+
+footer p {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
