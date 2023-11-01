@@ -6,6 +6,15 @@ font-family: 'Montserrat', sans-serif; */
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.sr-only {
+  display: none;
 }
 
 header {
@@ -19,35 +28,89 @@ header p {
   font-size: 12px;
 }
 
-main {
-  background-color: #F2E7DA;
-  height: 100vh;
-}
-main .navbar {
-  width: 100%;
-  padding: 20px;
+.primary-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-main .navbar .title {
+.primary-header .logo {
   font-family: "Abhaya Libre", serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2.5rem;
+  margin: 2rem;
 }
-main .navbar .socials {
-  display: none;
+.primary-header .mobile-nav-toggle {
+  display: block;
+  position: absolute;
+  z-index: 9999;
+  background-color: transparent;
+  background-image: url("../../assets/img/menu-icon.svg");
+  background-repeat: no-repeat;
+  width: 2rem;
+  border: none;
+  aspect-ratio: 1;
+  right: 2rem;
 }
-main .navbar .nav {
-  display: none;
+.primary-header .mobile-nav-toggle[aria-expanded=true] {
+  background-image: url("../../assets/img/close-menu-icon.svg");
 }
-main .navbar .icons {
-  font-size: 28px;
+.primary-header .navbar {
   display: flex;
-  justify-content: end;
+  gap: 3rem;
+  list-style: none;
+  position: fixed;
+  z-index: 1000;
+  inset: 0 0 0 30%;
+  flex-direction: column;
+  padding: min(30vh, 10rem) 40px;
+  background-color: hsla(0, 0%, 100%, 0.75);
+  backdrop-filter: blur(1rem);
+  transform: translateX(100%);
+  transition: transform 350ms ease-out;
 }
-main .navbar .icons .fa-cart-shopping, main .navbar .icons .fa-magnifying-glass {
-  display: none;
+.primary-header .navbar a {
+  text-decoration: none;
+}
+.primary-header .navbar[data-visible=true] {
+  transform: translateX(0%);
+}
+
+@media (min-width: 26.5625rem) {
+  .primary-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: ". logo mobile-nav-toggle";
+    align-items: center;
+  }
+  .primary-header .logo {
+    font-size: 50px;
+    grid-area: logo;
+    justify-self: center;
+    align-self: center;
+  }
+  .primary-header .mobile-nav-toggle {
+    grid-area: mobile-nav-toggle;
+  }
+}
+body {
+  overflow-x: hidden;
+}
+body main {
+  background-color: #F2E7DA;
+  height: 100vh;
+}
+body main .main-section {
+  height: 100%;
+}
+body main .main-section .img-gallery {
+  display: flex;
+  gap: 0.125rem;
+  width: 100%;
+}
+body main .main-section .img-gallery img {
+  width: 33.3%;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 footer {

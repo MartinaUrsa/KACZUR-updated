@@ -16,31 +16,30 @@
     </header>
     <main>
         <!-- Navbar -->
-        <section class="navbar">
-            <div class="title">KACZUR</div>
-            <div class="socials">
-                <i class="fa-brands fa-instagram" style="color: #000000;"></i>
-                <i class="fa-brands fa-facebook" style="color: #000000;"></i>
-            </div>
-            <div class="nav">
-                <ul>
-                    <li><a href="">INICIO</a></li>
+        <section class="primary-header">
+            <div class="logo">KACZUR</div>
+
+            <button class="mobile-nav-toggle" aria-controls="navbar" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+            </button>
+
+            <div>
+                <ul class="navbar" id="navbar" data-visible="false">
+                    <li><a href="" class="active">INICIO</a></li>
                     <li><a href="">PRODUCTOS</a></li>
                     <li><a href="">CONTACTO</a></li>
                     <li><a href="">NOSOTROS</a></li>
                 </ul>
             </div>
-            <div class="icons">
-                <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
-                <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
-                <div class="hamburger-menu">
-                    <i class="fa-solid fa-bars" style="color: #000000;"></i>
-                    
-                </div>
-            </div>
         </section>
         <!-- End Navbar -->
-
+        <section class="main-section">
+            <div class="img-gallery">
+                <img src="./assets/img/carro-kaczur.jpg" alt="">
+                <img src="./assets/img/frente-local.jpg" alt="">
+                <img src="./assets/img/prod-kaczur.jpeg" alt="">
+            </div>
+        </section>
     </main>
     <footer>
         <div class="socials-footer">
@@ -57,5 +56,7 @@
         <img class="tarjetas" src="./assets/img/Tarjetas.png" alt="">
         <p>AV. LOPE DE VEGA 1964 (1964) VILLA DEVOTO CABA- Horario: L a V 10.30 a 13hs y 16 a 19.30hs</p>
     </footer>
+
+    <script src="./js/navbar.js"></script>
 </body>
 </html>
