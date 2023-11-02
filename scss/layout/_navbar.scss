@@ -81,7 +81,7 @@
 
 @media (min-width: 48rem) {
     .primary-header {
-        padding: 2rem 1.5rem 20px 1.5rem;
+        padding: 2rem 1.5rem 10px 1.5rem;
         flex-direction: column;
 
         .nav {
@@ -89,7 +89,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-
 
             .navbar {
                 align-items: center;
@@ -115,6 +114,8 @@
         }
 
         .logo {
+            margin-top: 1rem;
+
             h1 {
                 font-size: 4.375rem;
             }

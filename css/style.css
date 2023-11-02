@@ -141,7 +141,7 @@ header p {
 }
 @media (min-width: 48rem) {
   .primary-header {
-    padding: 2rem 1.5rem 20px 1.5rem;
+    padding: 2rem 1.5rem 10px 1.5rem;
     flex-direction: column;
   }
   .primary-header .nav {
@@ -165,6 +165,9 @@ header p {
     display: flex;
     font-size: 1.5625rem;
     gap: 8px;
+  }
+  .primary-header .logo {
+    margin-top: 1rem;
   }
   .primary-header .logo h1 {
     font-size: 4.375rem;
@@ -198,6 +201,11 @@ body main .main-section .img-gallery .foto3 {
 }
 
 @media (min-width: 48rem) {
+  body main .main-section .img-gallery img {
+    height: 400px;
+  }
+}
+@media (min-width: 64rem) {
   body main .main-section .img-gallery .foto3 {
     display: inline;
   }
@@ -240,6 +248,28 @@ footer .tarjetas {
 }
 footer p {
   display: none;
+}
+
+body {
+  position: relative;
+}
+body .whatsapp-logo {
+  width: 40px;
+  aspect-ratio: 1;
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  right: 13px;
+}
+body .whatsapp-logo:hover {
+  transform: scale(1.07);
+}
+
+@media (min-width: 48rem) {
+  body .whatsapp-logo {
+    width: 45px;
+    right: 25px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
