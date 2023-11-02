@@ -1,8 +1,9 @@
 body {
     overflow-x: hidden;
+
     main {
         background-color: $light-brand-color;
-        height: 100vh;
+        padding-bottom: 100px;
         
         .main-section {
             height: 100%;
@@ -16,8 +17,26 @@ body {
                     width: 33.3%;
                     object-fit: cover;
                     overflow: hidden;
-                    }
+                }
+
+                .foto3 {
+                    display: none;
+                }
             }
         }
     }    
+}
+
+@media (min-width: 48rem) {
+    body {
+        main {
+            .main-section {
+                .img-gallery {
+                    .foto3 {
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
 }
